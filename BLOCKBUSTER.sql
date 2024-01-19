@@ -1,6 +1,8 @@
 -- Active: 1705185829338@@127.0.0.1@3306@blockbuster
 -- MySQL Workbench Forward Engineering
 
+DROP SCHEMA IF EXISTS `blockbuster`;
+
 SET @OLD_UNIQUE_CHECKS = @@UNIQUE_CHECKS, UNIQUE_CHECKS = 0;
 
 SET
