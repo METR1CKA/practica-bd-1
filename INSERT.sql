@@ -171,36 +171,39 @@ VALUES (NULL, 1, 1),
 -- -----------------------------------------------------
 INSERT INTO
     blockbuster.prestamos (`id`, `fecha_prestamo`, `socio_id`, `status`)
-VALUES (NULL, '2024-01-16 12:30:00', 1, true),
-    (NULL, '2024-01-16 14:30:00', 2, true),
-    (NULL, '2024-01-14 16:30:00', 3, true),
-    (NULL, '2024-01-14 08:30:00', 4, true),
-    (NULL, '2024-01-15 09:30:00', 5, true),
-    (NULL, '2024-01-12 10:30:00', 6, true),
-    (NULL, '2024-01-13 11:30:00', 7, true),
-    (NULL, '2024-01-10 13:30:00', 8, true),
-    (NULL, '2024-01-09 15:30:00', 9, true),
-    (NULL, '2024-01-09 16:30:00', 9, true),
-    (NULL, '2024-01-09 16:30:00', 1, true),
-    (NULL, '2024-01-10 16:30:00', 2, true);
+VALUES (NULL, '2024-01-16 12:30:00', 1, false),
+    (NULL, '2024-01-16 14:30:00', 2, false),
+    (NULL, '2024-01-14 16:30:00', 3, false),
+    (NULL, '2024-01-14 08:30:00', 4, false),
+    (NULL, '2024-01-15 09:30:00', 5, false),
+    (NULL, '2024-01-12 10:30:00', 6, false),
+    (NULL, '2024-01-13 11:30:00', 7, false),
+    (NULL, '2024-01-10 13:30:00', 8, false),
+    (NULL, '2024-01-09 15:30:00', 9, false),
+    (NULL, '2024-01-09 16:30:00', 9, false),
+    (NULL, '2024-01-09 16:30:00', 1, false),
+    (NULL, '2024-01-10 16:30:00', 2, false);
+    (NULL, '2024-01-18 11:33:00', 2, false);
+    (NULL, '2024-01-18 16:30:00', 2, false);
+    (NULL, '2024-01-18 18:30:00', 2, false);
 
 -- -----------------------------------------------------
 -- Insert blockbuster.prestamos_peliculas
 -- -----------------------------------------------------
 INSERT INTO
     blockbuster.prestamos_peliculas (`id`, `prestamo_id`, `pelicula_id`, `cantidad`, `status`)
-VALUES (NULL, 1, 1, 1, true),
-    (NULL, 2, 2, 2, true),
-    (NULL, 3, 3, 3, true),
-    (NULL, 4, 4, 4, true),
-    (NULL, 5, 5, 5, true),
-    (NULL, 6, 6, 6, true),
-    (NULL, 7, 7, 7, true),
-    (NULL, 8, 8, 2, true),
-    (NULL, 9, 9, 3, true),
-    (NULL, 10, 10, 1, true),
-    (NULL, 1, 1, 2, true),
-    (NULL, 2, 2, 4, true);
+VALUES (NULL, 1, 1, 1, false),
+    (NULL, 2, 2, 2, false),
+    (NULL, 3, 3, 3, false),
+    (NULL, 4, 4, 4, false),
+    (NULL, 5, 5, 5, false),
+    (NULL, 6, 6, 6, false),
+    (NULL, 7, 7, 7, false),
+    (NULL, 8, 8, 2, false),
+    (NULL, 9, 9, 3, false),
+    (NULL, 10, 10, 1, false),
+    (NULL, 1, 1, 2, false),
+    (NULL, 2, 2, 4, false);
 
 -- -----------------------------------------------------
 -- Insert blockbuster.prestamos_finalizados
